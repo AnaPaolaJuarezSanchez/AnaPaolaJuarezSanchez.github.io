@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script src="javascript.js"></script>
+	<title>Practica JavaScript</title>
+</head>
+<body>
+	<h1 style="color: darkorchid">Practica JavaScript</h1><hr>
+
+	<div id="div1" onmouseover="cambiaColor()" onmouseout="regresaColor()">
+		Texto del div 1
+	</div><br>
+
+	<button class="btn btn-info" onclick="cambiaColor()">Cambiar color</button>
+
+	<h2>Productos</h2><hr>
+	<h3 style="color: orchid ">Producto 1 <input style="text-align: center;" type="number" id="p1" value="0" onchange="actualizaTotal(document.getElementById('p1').value)"></h3>
+	<h3 style="color: lightpink">Producto 2 <input style="text-align: center;" type="number" id="p2" value="0" onchange="actualizaTotal(document.getElementById('p2').value)"></h3>
+	<h3 style="color: lightgreen">Producto 3 <input style="text-align: center;" type="number" id="p3" value="0" onchange="actualizaTotal(document.getElementById('p3').value)"></h3>
+	<h3 style="color: lightblue">Producto 4 <input style="text-align: center;" type="number" id="p4" value="0" onchange="actualizaTotal(document.getElementById('p4').value)"></h3>
+
+	<h3>Total: <input style="text-align: center;" type="number" id="total" value="0"></h3>
+
+</body>
+</html>
