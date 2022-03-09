@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Ejemplo JQUERY Mobile</title>
+	<link rel="stylesheet" type="text/css" href="jquerymobile/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" href="jquerymobile/MisTemas.min.css">
+	<link rel="stylesheet" type="text/css" href="jquerymobile/jquery.mobile.icons.min.css">
+	<script src="jquerymobile/jquery-1.11.1.min.js"></script>
+	<script src="jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div data-role="page" id="inicio" data-theme="b">
+	<div data-role="header" style="color: orchid; background-color: lightgray">
+		<h1>Ejemplo APP</h1>
+
+	</div>
+	<div role="main" class="ui-content" data-theme="a">
+		
+		<h2>PAPAS TURISTAS</h2>
+		<p style="border-radius: 5px; background-color: lightblue; padding: 10px; color: black">Hola usuario fan de las frituras :D
+			Bienvenido a nuestra pagina/negocio sobre papas fritas de todas partes del mundo!!
+		</p>
+		<img src="papitas.jpg" alt="" width="70%">
+	</div>
+	<div role="main" class="ui-content">
+		<a href="#" class="ui-btn">Promociones</a>
+		<button class="ui-btn">Sorteos</button>
+	</div>
+
+    <div data-role="footer" data-position="fixed">
+    	<div data-role="navbar">
+    		<ul>
+    			<li><a href="#inicio" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+    			<li><a href="#productos" data-icon="star">Productos</a></li>
+    			<li><a href="#carrito" data-icon="gear">Carrito</a></li>
+    		</ul>
+    	</div>
+    </div>
+    <div data-role="footer" style="color: orchid">
+		APJS Cetis 107 &copy; 2022
+	</div>
+</div>
+
+
+<div data-role="page" id="productos" data-theme="b">
+	<div data-role="header" style="color: orchid; background-color: lightgrey">
+		<h1>Ejemplo APP</h1>
+	</div>
+
+	<div role="main" class="ui-content">
+		<h2>Listado de Productos</h2><hr>
+		<ol data-role="listview">
+			<li>Sabritas</li>
+			<li>Ruffles</li>
+			<li>Domritos</li>
+			<li>Chettos</li>
+			<li>Takis</li>
+		</ol>
+	</div>
+
+    <div data-role="footer" data-position="fixed">
+    	<div data-role="navbar">
+    		<ul>
+    			<li><a href="#inicio" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+    			<li><a href="#productos" data-icon="star" class="ui-btn-active">Productos</a></li>
+    			<li><a href="#carrito" data-icon="gear">Carrito</a></li>
+    		</ul>
+    		
+    	</div>
+    	
+    </div>
+
+	<div data-role="footer" style="color: orchid">
+		APJS Cetis 107 &copy; 2022
+	</div>
+</div>
+
+<div data-role="page" id="carrito" data-theme="c">
+	<div data-role="header" style="color: orchid; background-color: lightgrey">
+		<h1>Ejemplo APP</h1>
+	</div>
+
+	<div role="main" class="ui-content">
+		<h2>Listado de Productos</h2><hr>
+		<ul data-role="listview" data-inset="true">
+		    <li>
+			<a href="#">
+		        <img src="ruffles.jpg">
+		    <h2>Ruffles</h2>
+		    <p>$37</p></a>
+		    </li>
+		    <li>
+			<a href="#">
+		        <img src="chetosT.jpg">
+		    <h2>Chettos Torciditos</h2>
+		    <p>$35</p></a>
+		    </li>
+		    <li>
+			<a href="#">
+		        <img src="takisF.jpg">
+		    <h2>Takis Fuego</h2>
+		    <p>$32</p></a>
+		    </li>
+			<li>
+			<a href="#">
+		        <img src="sabritasC.jpg">
+		    <h2>Sabritas con Crema y Especias</h2>
+		    <p>$41</p></a>
+		    </li>
+			<li>
+			<a href="#">
+		        <img src="crujitosF.jpg">
+		    <h2>Crujitos Flamin Hot</h2>
+		    <p>$28</p></a>
+		    </li>
+			<li>
+			<a href="#">
+		        <img src="ruflesSn.jpg">
+		    <h2>Rufles Salsa Negra</h2>
+		    <p>$32</p></a>
+		    </li>
+		</ul>
+	</div>
+
+    <div data-role="footer" data-position="fixed" data-theme="a">
+    	<div data-role="navbar">
+    		<ul>
+    			<li><a href="#inicio" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+    			<li><a href="#productos" data-icon="star" class="ui-btn-active">Productos</a></li>
+    			<li><a href="#" data-icon="gear">Carrito</a></li>
+    		</ul>
+    	</div>
+	</div>
+    	<div data-role="footer" style="color: orchid">
+		APJS Cetis 107 &copy; 2022
+	    </div>
+	
+</div>
+</body>
+</html>
